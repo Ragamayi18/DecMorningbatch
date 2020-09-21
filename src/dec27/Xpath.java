@@ -10,32 +10,12 @@ public class Xpath {
 	public static void main(String[] args) throws Throwable {
 		// TODO Auto-generated method stub
 		WebDriver driver=new ChromeDriver();
-		driver.navigate().to("http://orangehrm.qedgetech.com/");
+		driver.get("https://www.gmail.com/");
 		driver.manage().window().maximize();
-		Thread.sleep(3000);
-		WebElement username= driver.findElement(By.xpath("//input[@id='txtUsername']"));
-		username.clear();
-		username.sendKeys("Admin");
-		Thread.sleep(3000);
-		WebElement password=driver.findElement(By.xpath("//input[@id='txtPassword']"));
-		password.clear();
-		password.sendKeys("Qedge12!@#");
-		driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
-		Thread.sleep(3000);
-		if(driver.getCurrentUrl().contains("dash"))
-		{
-			System.out.println("login is success");
-		}
-		else
-		{
-			String message=driver.findElement(By.xpath("//span[@id='spanMessage']")).getText();
-			System.out.println("login is failed");
-			
-		}
-				
-		
-         Thread.sleep(3000);
-         driver.close();
-	}
+		driver.findElement(By.id("identifierId")).sendKeys("chinnarigalla@gmail.com");
+		driver.findElement(By.xpath("//*[@id=\"yDmH0d\"]/div[1]/div[2]")).click();
+		driver.findElement(By.id("pass")).sendKeys("nagamani1318");
 
+	
+	}
 }

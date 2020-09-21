@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -21,6 +22,7 @@ public class Extentreport {
 			//generate html report under proiject
 			report=new ExtentReports("./Reports/Mrng.html");	
 		}
+	 
 		@Test
 		public void passTest()
 		{

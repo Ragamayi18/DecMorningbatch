@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="feb18.Frames">
+      <class name="jan29.Datadriven$DataDriven">
         <methods>
-          <include name="frame"/>
+          <include name="tearDown"/>
+          <include name="Login"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- feb18.Frames -->
+      </class> <!-- jan29.Datadriven$DataDriven -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

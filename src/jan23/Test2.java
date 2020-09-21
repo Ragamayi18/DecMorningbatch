@@ -24,7 +24,7 @@ public class Test2 {
 		Reporter.log("Executing Register link",true);
 		Thread.sleep(4000);
 		}
-		@Test(priority =1)
+		@Test
 		public void hotelLink()throws Throwable
 		{
 		driver.findElement(By.partialLinkText("Hot")).click();
